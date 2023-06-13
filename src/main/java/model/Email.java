@@ -15,12 +15,12 @@ public class Email {
         String body = "";
         String host = "smtp.gmail.com";
         int port = 587;
-        String username = "your_email@gmail.com";
-        String password = "your_password";
+        String username = "copylistas@gmail.com";
+        String password = "bbrabtyltlrupcsw";
 
         // Configurações do e-mail
         
-        String fromEmail = "your_email@gmail.com";
+        String fromEmail = "copylistas@gmail.com";
         for (Informacoes pedido : pedidos) {
             toEmail = pedido.getEmail();
             subject = "Pizzaria 3 Amigos: Pedido Sr.(a) " + pedido.getNome();
@@ -40,7 +40,7 @@ public class Email {
         // Cria uma sessão de e-mail autenticada
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("your_email@gmail.com", "your_password");
+                return new PasswordAuthentication("copylistas@gmail.com", "bbrabtyltlrupcsw");
             }
         });
 
